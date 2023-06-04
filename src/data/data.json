@@ -1,0 +1,89 @@
+{
+    "Logo": "logo.png",
+    "Nav-data": {
+        "Nav-left": [
+            {
+                "id": "1",
+                "image": "notification.png"
+            },
+            {
+                "id": "2",
+                "image": "inbox.png"
+            },
+            {
+                "id": "3",
+                "image": "video.png"
+            }
+        ],
+        "search-img": "search.png",
+        "profile-pic": "profile-pic.png"
+    },
+    "Left-Sidebar": {
+        "imp-links": [
+            {
+                "id": "1",
+                "image": "news.png",
+                "text": "latest News"
+            },
+            {
+                "id": "2",
+                "image": "friends.png",
+                "text": "Friends"
+            },
+            {
+                "id": "3",
+                "image": "group.png",
+                "text": "Group"
+            },
+            {
+                "id": "4",
+                "image": "marketplace.png",
+                "text": "Marketplace"
+            },
+            {
+                "id": "5",
+                "image": "watch.png",
+                "text": "Watch"
+            }
+        ],
+        "shortcut-links": [
+            {
+                "id": "1",
+                "image": "shortcut-1.png",
+                "text": "Web Developers"
+            },
+            {
+                "id": "2",
+                "image": "shortcut-2.png",
+                "text": "Web Design Course"
+            },
+            {
+                "id": "3",
+                "image": "shortcut-3.png",
+                "text": "Full Stack Development"
+            },
+            {
+                "id": "4",
+                "image": "shortcut-4.png",
+                "text": "Web Experts"
+            }
+        ]
+    },
+    "Write-Post-Container": [
+        {
+            "id": "1",
+            "image": "live-video.png",
+            "text": "Live Video"
+        },
+        {
+            "id": "2",
+            "image": "photo.png",
+            "text": "Photo/Video"
+        },
+        {
+            "id": "3",
+            "image": "feeling.png",
+            "text": "Feeling/Activities"
+        }
+    ]
+}
