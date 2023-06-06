@@ -3,8 +3,8 @@ import React from 'react'
 export default function OnlineTest(props) {
     const {image, name} = props
     return (
-        <div class="online-list">
-            <div class="online">
+        <div className="online-list">
+            <div className="online">
                 <img
                     src={require(`../images/${image}.png`)} alt='online-list-icon'
                 />

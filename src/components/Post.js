@@ -6,9 +6,9 @@ import ActivityIcons from './ActivityIcons';
 export default function Post(props) {
     const {name, date, image } = props
     return (
-        <div class="post-container">
-            <div class="post-row">
-                <div class="user-profile">
+        <div className="post-container">
+            <div className="post-row">
+                <div className="user-profile">
                     <img src={require(`../images/profile-pic.png`)} alt='profile'/>
                     <div>
                         <p>{name}</p>
@@ -20,14 +20,14 @@ export default function Post(props) {
                 </a>
             </div>
 
-            <p class="post-text">
+            <p className="post-text">
                 Like and share this video with friends, tag
                 <span>@FacebookPage</span> facebook page on your post. ask your
                 doubts in the comment <a href="#">Our Page</a>
             </p>
-            <img src={require(`../images/${image}.png`)} class="post-image" alt='post-image' />
+            <img src={require(`../images/${image}.png`)} className="post-image" alt='post' />
 
-            <div class="post-row">
+            <div className="post-row">
                 <ActivityIcons/>
             </div>
         </div>

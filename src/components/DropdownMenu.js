@@ -21,7 +21,7 @@ export default function DropdownMenu(props) {
 
     return (
         <div
-            class={`settings-menu ${ShowSetting ? 'settings-menu-height' : ''}`}
+        className={`settings-menu ${ShowSetting ? 'settings-menu-height' : ''}`}
         >
             <div
                 id="dark-btn"

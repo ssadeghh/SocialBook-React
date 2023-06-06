@@ -14,7 +14,7 @@ export default function Navbar() {
     return (
         <>
             <nav>
-                <div class="nav-left">
+                <div className="nav-left">
                     <a href="/">
                         <img
                             src={require(`../images/${data.Logo}`)}
@@ -25,13 +25,13 @@ export default function Navbar() {
                     <ul>
                         {data['Nav-data']['Nav-left'].map((item) => (
                             <li key={item.id}>
-                                <img src={require(`../images/${item.image}`)} />
+                                <img src={require(`../images/${item.image}`)} alt='item'/>
                             </li>
                         ))}
                     </ul>
                 </div>
-                <div class="nav-right">
-                    <div class="search-box">
+                <div className="nav-right">
+                    <div className="search-box">
                         <img
                             src={require(`../images/${data['Nav-data']['search-img']}`)}
                             alt='search'
@@ -40,7 +40,7 @@ export default function Navbar() {
                     </div>
 
                     <div
-                        class="nav-user-icon online"
+                        className="nav-user-icon online"
                         onClick={ShowSetting}
                     >
                         <img

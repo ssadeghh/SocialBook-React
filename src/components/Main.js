@@ -5,7 +5,7 @@ import Post from './Post';
 
 export default function Main() {
     return (
-        <div class="main-content">
+        <div className="main-content">
             <StoryGallery/>
             <WritePostContainer/>
             <Post name={'John Nichlson'} date={'June 24 2022, 14:40 pm'} image={'feed-image-1'}/>
@@ -14,7 +14,7 @@ export default function Main() {
             <Post name={'John Nichlson'} date={'June 24 2022, 14:40 pm'} image={'feed-image-4'}/>
             <Post name={'John Nichlson'} date={'June 24 2022, 14:40 pm'} image={'feed-image-5'}/>
             
-            <button type="button" class="load-more-btn">
+            <button type="button" className="load-more-btn">
                 Load More
             </button>
         </div>

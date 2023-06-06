@@ -8,9 +8,9 @@ const icons = Data['Write-Post-Container']
 
 export default function WritePostContainer() {
     return (
-        <div class="write-post-container">
-            <div class="user-profile">
-                <img src={require(`../images/profile-pic.png`)} />
+        <div className="write-post-container">
+            <div className="user-profile">
+                <img src={require(`../images/profile-pic.png`)} alt='profile' />
                 <div>
                     <p>John Nichlson</p>
                     <small>
@@ -19,16 +19,16 @@ export default function WritePostContainer() {
                 </div>
             </div>
 
-            <div class="post-input-container">
+            <div className="post-input-container">
                 <textarea
                     rows="3"
                     placeholder="What's on your mind, John?"
                 ></textarea>
 
-                <div class="add-post-links">
+                <div className="add-post-links">
                     {icons.map((item) => (
-                        <a href="#" key={item.id}>
-                            <img src={require(`../images/${item.image}`)} />
+                        <a href="" key={item.id}>
+                            <img src={require(`../images/${item.image}`)} alt='item'/>
                             {item.text}
                         </a>
                     ))}

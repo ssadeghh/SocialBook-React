@@ -6,8 +6,8 @@ const shortcutLinks = Data['Left-Sidebar']['shortcut-links']
 
 export default function LeftSidebar() {
     return (
-        <div class="left-sidebar">
-            <div class="imp-links">
+        <div className="left-sidebar">
+            <div className="imp-links">
                 {impLinks.map((item) => (
                     <a href="" key={item.id}>
                         <img
@@ -18,7 +18,7 @@ export default function LeftSidebar() {
                 ))}
                 <a href="">See More</a>
             </div>
-            <div class="shortcut-links">
+            <div className="shortcut-links">
                 <p>Your Shortcuts</p>
                 {shortcutLinks.map((item, index) => (
                     <a href="" key={index}>

@@ -4,12 +4,12 @@ export default function ProfileDetails(props) {
     const { name, follower, images } = props
     return (
         <>
-            <div class="profile-details">
-                <div class="pd-left">
-                    <div class="pd-row">
+            <div className="profile-details">
+                <div className="pd-left">
+                    <div className="pd-row">
                         <img
                             src={require(`../images/profile.png`)}
-                            class="pd-img"
+                            className="pd-img"
                             alt='profile'
                         />
                         <div>
@@ -19,13 +19,13 @@ export default function ProfileDetails(props) {
                                 <img
                                     key={index}
                                     src={require(`../images/${image}`)}
-                                    alt='image'
+                                    alt='item'
                                 />
                             ))}
                         </div>
                     </div>
                 </div>
-                <div class="pd-right">
+                <div className="pd-right">
                     <button type="button">
                         <img src={require(`../images/add-friends.png`)} alt='add-friend' />
                         Friend

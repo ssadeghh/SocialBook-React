@@ -5,8 +5,8 @@ export default function DdUserMenu(props) {
     return (
         // dropdown user menu
         <div>
-            <div class="user-profile">
-                <img src={require(`../images/${image}.png`)} alt='Profile Picture'/>
+            <div className="user-profile">
+                <img src={require(`../images/${image}.png`)} alt='Profile'/>
                 <div>
                     <p>{info}</p>
                     <a href={`${profile ? '/profile':''}`}>{link}</a>

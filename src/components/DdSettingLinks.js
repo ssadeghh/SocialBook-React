@@ -4,10 +4,10 @@ export default function DdSettingLinks(props) {
     const { image, link } = props
 
     return (
-        <div class="settings-links">
+        <div className="settings-links">
             <img
                 src={require(`../images/${image}.png`)}
-                class="settings-icon"
+                className="settings-icon"
                 alt="Setting Icon"
             />
             <a>

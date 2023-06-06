@@ -3,7 +3,7 @@ import Story from './Story'
 
 export default function StoryGallery() {
     return (
-        <div class="story-gallery">
+        <div className="story-gallery">
             <Story image={'upload'} text={'Post Story'} classname={'story1'}/>
             <Story image={'member-1'} text={'Alison'} classname={'story2'}/>
             <Story image={'member-2'} text={'Jackson'} classname={'story3'}/>

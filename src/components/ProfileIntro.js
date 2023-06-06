@@ -5,9 +5,9 @@ export default function ProfileIntro(props) {
     return (
         <div>
             {intro ? (
-                <div class="profile-intro">
+                <div className="profile-intro">
                     <h3>{title}</h3>
-                    <p class="intro-text">
+                    <p className="intro-text">
                         {para}
                         <img src={require(`../images/feeling.png`)} alt='feeling' />
                     </p>
@@ -24,18 +24,18 @@ export default function ProfileIntro(props) {
                     </ul>
                 </div>
             ) : (
-                <div class="profile-intro">
-                    <div class="title-box">
+                <div className="profile-intro">
+                    <div className="title-box">
                         <h3>{title}</h3>
                         <a href="">{link}</a>
                     </div>
                     {para ? <p>{para}</p> : ''}
-                    <div class={`${classBox}`}>
+                    <div className={`${classBox}`}>
                         {data.map((item,index) => (
                             <div key={index}>
                                 <img
                                     src={require(`../images/${item.image}.png`)}
-                                    alt='image'
+                                    alt='item'
                                 />
                                 {item.description ? <p>{item.description}</p> : ''}
                             </div>

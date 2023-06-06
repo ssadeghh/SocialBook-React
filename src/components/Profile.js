@@ -10,7 +10,7 @@ export default function Profile() {
         <>
             <Navbar />
 
-            <div class="profile-container">
+            <div className="profile-container">
                 <img src={require(`../images/cover.png`)} class="cover-img" alt='cover' />
 
                 <ProfileDetails
@@ -24,8 +24,8 @@ export default function Profile() {
                     ]}
                 />
 
-                <div class="profile-info">
-                    <div class="info-col">
+                <div className="profile-info">
+                    <div className="info-col">
                         <ProfileIntro
                             intro={true}
                             title={'Intro'}

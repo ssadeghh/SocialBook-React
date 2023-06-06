@@ -6,8 +6,8 @@ import OnlineTest from './OnlineTest';
 
 export default function RightSidebar() {
     return (
-        <div class="right-sidebar">
-            <div class="sidebar-title">
+        <div className="right-sidebar">
+            <div className="sidebar-title">
                 <h4>Events</h4>
                 <a href="">See All</a>
             </div>
@@ -15,12 +15,12 @@ export default function RightSidebar() {
             <Event dateNum={'18'} dateMonth={'March'} title={'Social Media'}/>
             <Event dateNum={'22'} dateMonth={'June'} title={'Media Marketing'}/>
             
-            <div class="sidebar-title">
+            <div className="sidebar-title">
                 <h4>Advertisement</h4>
                 <a href="">Close</a>
             </div>
-            <img src={require(`../images/advertisement.png`)} class="sidebar-ads" alt='ads'/>
-            <div class="sidebar-title">
+            <img src={require(`../images/advertisement.png`)} className="sidebar-ads" alt='ads'/>
+            <div className="sidebar-title">
                 <h4>Conversation</h4>
                 <a href="">Hide Chat</a>
             </div>
