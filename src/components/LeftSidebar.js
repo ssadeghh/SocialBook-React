@@ -9,21 +9,21 @@ export default function LeftSidebar() {
         <div className="left-sidebar">
             <div className="imp-links">
                 {impLinks.map((item) => (
-                    <a href="" key={item.id}>
+                    <a href="#" key={item.id}>
                         <img
-                            src={require(`../images/${item.image}`)}
+                            src={require(`../images/${item.image}`)} alt='item'
                         />
                         {item.text}
                     </a>
                 ))}
-                <a href="">See More</a>
+                <a href="#">See More</a>
             </div>
             <div className="shortcut-links">
                 <p>Your Shortcuts</p>
                 {shortcutLinks.map((item, index) => (
-                    <a href="" key={index}>
+                    <a href="#" key={index}>
                         <img
-                            src={require(`../images/${item.image}`)}
+                            src={require(`../images/${item.image}`)} alt='item'
                         />
                         {item.text}
                     </a>

@@ -15,7 +15,7 @@ export default function Post(props) {
                         <span>{date}</span>
                     </div>
                 </div>
-                <a href="">
+                <a href="#">
                     <FontAwesomeIcon icon={faEllipsisV} />
                 </a>
             </div>

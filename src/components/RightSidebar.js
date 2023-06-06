@@ -1,6 +1,4 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import Event from './Event';
 import OnlineTest from './OnlineTest';
 
@@ -9,7 +7,7 @@ export default function RightSidebar() {
         <div className="right-sidebar">
             <div className="sidebar-title">
                 <h4>Events</h4>
-                <a href="">See All</a>
+                <a href="#">See All</a>
             </div>
 
             <Event dateNum={'18'} dateMonth={'March'} title={'Social Media'}/>
@@ -17,12 +15,12 @@ export default function RightSidebar() {
             
             <div className="sidebar-title">
                 <h4>Advertisement</h4>
-                <a href="">Close</a>
+                <a href="#">Close</a>
             </div>
             <img src={require(`../images/advertisement.png`)} className="sidebar-ads" alt='ads'/>
             <div className="sidebar-title">
                 <h4>Conversation</h4>
-                <a href="">Hide Chat</a>
+                <a href="#">Hide Chat</a>
             </div>
 
             <OnlineTest image={'member-1'} name={'Alison Mina'}/>
