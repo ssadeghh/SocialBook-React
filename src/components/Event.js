@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function Event(props) {
-    const {dateNum, dateMonth, title} = props
+    const { dateNum, dateMonth, title } = props
     return (
         <div className="event">
             <div className="left-event">
@@ -16,7 +16,9 @@ export default function Event(props) {
                 <p>
                     <FontAwesomeIcon icon={faMapMarkerAlt} /> Willson Tech Park
                 </p>
-                <a href="#">More Info</a>
+                <button type="button" className="more-info-button">
+                    More Info
+                </button>
             </div>
         </div>
     )

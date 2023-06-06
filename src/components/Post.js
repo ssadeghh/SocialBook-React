@@ -15,7 +15,7 @@ export default function Post(props) {
                         <span>{date}</span>
                     </div>
                 </div>
-                <a href="#">
+                <a href="/">
                     <FontAwesomeIcon icon={faEllipsisV} />
                 </a>
             </div>
@@ -23,7 +23,7 @@ export default function Post(props) {
             <p className="post-text">
                 Like and share this video with friends, tag
                 <span>@FacebookPage</span> facebook page on your post. ask your
-                doubts in the comment <a href="#">Our Page</a>
+                doubts in the comment <a href="/">Our Page</a>
             </p>
             <img src={require(`../images/${image}.png`)} className="post-image" alt='post' />
 

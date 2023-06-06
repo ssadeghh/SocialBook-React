@@ -34,7 +34,7 @@ export default function ProfileDetails(props) {
                         <img src={require(`../images/message.png`)} alt='message'/> Message
                     </button>
                     <br />
-                    <a href="#">
+                    <a href="/">
                         <img src={require(`../images/more.png`)} alt='more'/>
                     </a>
                 </div>

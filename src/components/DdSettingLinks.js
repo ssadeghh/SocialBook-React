@@ -10,10 +10,17 @@ export default function DdSettingLinks(props) {
                 className="settings-icon"
                 alt="Setting Icon"
             />
-            <a href='#'>
+            <button
+                type="button"
+                className="link-button"
+            >
                 {link}
-                <img src={require(`../images/arrow.png`)} width={'10px'} alt="Arrow Icon"/>
-            </a>
+                <img
+                    src={require(`../images/arrow.png`)}
+                    width={'10px'}
+                    alt="Arrow Icon"
+                />
+            </button>
         </div>
     )
 }

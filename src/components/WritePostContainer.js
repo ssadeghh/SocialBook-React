@@ -27,7 +27,7 @@ export default function WritePostContainer() {
 
                 <div className="add-post-links">
                     {icons.map((item) => (
-                        <a href="#" key={item.id}>
+                        <a href="/" key={item.id}>
                             <img src={require(`../images/${item.image}`)} alt='item'/>
                             {item.text}
                         </a>

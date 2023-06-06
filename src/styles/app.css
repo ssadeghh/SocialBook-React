@@ -38,7 +38,7 @@ nav {
     margin-right: 45px;
 }
 
-.nav-right{
+.nav-right {
     margin-left: auto;
 }
 
@@ -133,22 +133,18 @@ nav {
     flex-basis: 47%;
 }
 
-.imp-links a,
-.shortcut-links a {
+.link-button {
     text-decoration: none;
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     color: #626262;
-    width: fit-content;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.imp-links a img {
-    width: 25px;
-    margin-right: 15px;
-}
-
-.imp-links a:last-child {
+.imp-links button:last-child {
     color: #1876f2;
 }
 
@@ -156,7 +152,12 @@ nav {
     border-bottom: 1px solid #ccc;
 }
 
-.shortcut-links a img {
+.imp-links button img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.shortcut-links button img {
     width: 40px;
     border-radius: 4px;
     margin-right: 15px;
@@ -185,19 +186,6 @@ nav {
     color: #1876f2;
     font-size: 12px;
 }
-/* 
-.shortcut-links a img{
-    width: 40px;
-    border-radius: 4px;
-    margin-right: 15px;
-    
-}
-
-.shortcut-links p{
-    margin: 25px 0;
-    color: #626262;
-    font-weight: 500;
-} */
 
 .event {
     display: flex;
@@ -232,10 +220,15 @@ nav {
     font-size: 12px;
 }
 
-.event a {
+.more-info-button {
     font-size: 12px;
     text-decoration: none;
     color: #1876f2;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
 }
 
 .left-event span {
@@ -538,13 +531,18 @@ nav {
     border-radius: 50%;
 }
 
-.settings-links a {
+.settings-links button {
     text-decoration: none;
     display: flex;
     flex: 1;
     align-items: center;
     justify-content: space-between;
     color: #626262;
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
 }
 
 #dark-btn {
@@ -605,22 +603,22 @@ nav {
     border-radius: 6px;
 }
 
-.pd-row div h3{
+.pd-row div h3 {
     font-size: 25px;
     font-weight: 600;
 }
 
-.pd-row div p{
+.pd-row div p {
     font-size: 13px;
 }
 
-.pd-row div img{
+.pd-row div img {
     width: 25px;
     border-radius: 50%;
     margin-top: 12px;
 }
 
-.pd-right button{
+.pd-right button {
     background: #1876f2;
     border: 0;
     outline: 0;
@@ -633,21 +631,21 @@ nav {
     cursor: pointer;
 }
 
-.pd-right button img{
+.pd-right button img {
     height: 15px;
     margin-right: 10px;
 }
 
-.pd-right button:first-child{
+.pd-right button:first-child {
     background: #e4e6eb;
     color: #000;
 }
 
-.pd-right{
-text-align: right;
+.pd-right {
+    text-align: right;
 }
 
-.pd-right a{
+.pd-right a {
     background: #e4e6eb;
     border-radius: 3px;
     padding: 12px;
@@ -655,55 +653,55 @@ text-align: right;
     margin-top: 30px;
 }
 
-.pd-right a img{
+.pd-right a img {
     width: 20px;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.info-col{
+.info-col {
     flex-basis: 33%;
 }
 
-.post-col{
+.post-col {
     flex-basis: 65%;
 }
 
-.profile-intro{
+.profile-intro {
     background: var(--bg-color);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 4px;
 }
 
-.profile-intro h3{
+.profile-intro h3 {
     font-weight: 600;
 }
 
-.intro-text{
+.intro-text {
     text-align: center;
     margin: 10px 0;
     font-size: 15px;
 }
 
-.intro-text img{
+.intro-text img {
     width: 15px;
     margin-bottom: -3px;
 }
 
-.profile-intro hr{
+.profile-intro hr {
     border: 0;
     height: 1px;
     background: #ccc;
     margin: 24px 0;
 }
 
-.profile-intro ul li{
+.profile-intro ul li {
     list-style: none;
     font-size: 15px;
     margin: 15px 0;
@@ -711,57 +709,57 @@ text-align: right;
     align-items: center;
 }
 
-.profile-intro ul li img{
+.profile-intro ul li img {
     width: 26px;
     margin-right: 10px;
 }
 
-.title-box{
+.title-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.title-box a{
+.title-box a {
     text-decoration: none;
     color: #1876f2;
     font-size: 14px;
 }
 
-.photo-box{
+.photo-box {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     margin-top: 15px;
 }
 
-.photo-box div img{
+.photo-box div img {
     width: 100%;
     cursor: pointer;
 }
 
-.profile-intro p{
+.profile-intro p {
     font-size: 14px;
 }
 
-.friends-box{
+.friends-box {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     margin-top: 15px;
 }
 
-.friends-box div img{
+.friends-box div img {
     width: 100%;
     cursor: pointer;
     padding-bottom: 20px;
 }
 
-.friends-box div{
+.friends-box div {
     position: relative;
 }
 
-.friends-box p{
+.friends-box p {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -769,85 +767,86 @@ text-align: right;
 
 /* ------------------ Media query for home page ---------------------- */
 @media (max-width: 900px) {
-    .right-sidebar{
+    .right-sidebar {
         display: none;
     }
-    .left-sidebar{
+    .left-sidebar {
         display: none;
     }
-    nav{
+    nav {
         flex-wrap: wrap;
     }
-    .search-box{
+    .search-box {
         display: none;
     }
-    .logo{
+    .logo {
         width: 110px;
         margin-right: 20px;
     }
-    .nav-left ul li img{
+    .nav-left ul li img {
         width: 20px;
         margin: 0 8px;
     }
-    .nav-user-icon img{
+    .nav-user-icon img {
         width: 30px;
     }
-    .nav-user-icon{
+    .nav-user-icon {
         margin-left: 0;
     }
-    .add-post-links{
+    .add-post-links {
         flex-wrap: wrap;
     }
-    .main-content{
+    .main-content {
         flex-basis: 100%;
     }
-    .story img{
+    .story img {
         width: 20px;
         border-width: 3px;
     }
-    .story p{
+    .story p {
         font-size: 10px;
     }
-    .story.story1 img{
+    .story.story1 img {
         width: 25px;
         bottom: 30px;
     }
-    .add-post-links a{
+    .add-post-links a {
         margin-right: 12px;
         font-size: 9px;
     }
-    .add-post-links img{
+    .add-post-links img {
         width: 16px;
         margin-right: 5px;
     }
-    .post-input-container{
+    .post-input-container {
         padding-left: 0;
     }
 }
 
 /* ---------------- Media query for profile page ------------------ */
 @media (max-width: 900px) {
-    .profile-container{
+    .profile-container {
         padding: 20px 5%;
     }
-    .profile-details{
+    .profile-details {
         flex-wrap: wrap;
     }
-    .pd-right{
+    .pd-right {
         text-align: left;
         margin-top: 15px;
     }
-    .pd-right button{
+    .pd-right button {
         margin-left: 0;
         margin-right: 10px;
     }
-    .pd-row div h3{
+    .pd-row div h3 {
         font-size: 16px;
     }
-    .profile-info{
+    .profile-info {
         flex-wrap: wrap;
     }
-    .info-col, .post-col{
+    .info-col,
+    .post-col {
         flex-basis: 100%;
     }
 }
