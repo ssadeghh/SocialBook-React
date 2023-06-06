@@ -27,7 +27,7 @@ export default function ProfileIntro(props) {
                 <div className="profile-intro">
                     <div className="title-box">
                         <h3>{title}</h3>
-                        <a href="#">{link}</a>
+                        <a href="/">{link}</a>
                     </div>
                     {para ? <p>{para}</p> : ''}
                     <div className={`${classBox}`}>
