@@ -8,7 +8,7 @@ const Profile = Data['Nav-data']['profile-pic']
 export default function ActivityIcons() {
     return (
         <>
-            <div class="activity-icons">
+            <div className="activity-icons">
                 <div>
                     <img src={require(`../images/like-blue.png`)} alt="Like Icon"/> 120
                 </div>
@@ -19,8 +19,8 @@ export default function ActivityIcons() {
                     <img src={require(`../images/share.png`)} alt="Share Icon"/> 43
                 </div>
             </div>
-            <div class="post-profile-icon">
-                <img src={require(`../images/${Profile}`)} alt="Profile Picture"/>
+            <div className="post-profile-icon">
+                <img src={require(`../images/${Profile}`)} alt="Profile"/>
                 <FontAwesomeIcon icon={faCaretDown} />
             </div>
         </>
