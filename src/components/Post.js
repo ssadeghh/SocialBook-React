@@ -9,13 +9,13 @@ export default function Post(props) {
         <div class="post-container">
             <div class="post-row">
                 <div class="user-profile">
-                    <img src={require(`../images/profile-pic.png`)} />
+                    <img src={require(`../images/profile-pic.png`)} alt='profile'/>
                     <div>
                         <p>{name}</p>
                         <span>{date}</span>
                     </div>
                 </div>
-                <a href="#">
+                <a href="">
                     <FontAwesomeIcon icon={faEllipsisV} />
                 </a>
             </div>
@@ -25,7 +25,7 @@ export default function Post(props) {
                 <span>@FacebookPage</span> facebook page on your post. ask your
                 doubts in the comment <a href="#">Our Page</a>
             </p>
-            <img src={require(`../images/${image}.png`)} class="post-image" />
+            <img src={require(`../images/${image}.png`)} class="post-image" alt='post-image' />
 
             <div class="post-row">
                 <ActivityIcons/>

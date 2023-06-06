@@ -9,14 +9,14 @@ export default function ProfileIntro(props) {
                     <h3>{title}</h3>
                     <p class="intro-text">
                         {para}
-                        <img src={require(`../images/feeling.png`)} />
+                        <img src={require(`../images/feeling.png`)} alt='feeling' />
                     </p>
                     <hr />
                     <ul>
                         {data.map((item) => (
                             <li>
                                 <img
-                                    src={require(`../images/${item.image}.png`)}
+                                    src={require(`../images/${item.image}.png`)} alt='profile-icons'
                                 />
                                 {item.name}
                             </li>
@@ -27,14 +27,15 @@ export default function ProfileIntro(props) {
                 <div class="profile-intro">
                     <div class="title-box">
                         <h3>{title}</h3>
-                        <a href="#">{link}</a>
+                        <a href="">{link}</a>
                     </div>
                     {para ? <p>{para}</p> : ''}
                     <div class={`${classBox}`}>
-                        {data.map((item) => (
-                            <div>
+                        {data.map((item,index) => (
+                            <div key={index}>
                                 <img
                                     src={require(`../images/${item.image}.png`)}
+                                    alt='image'
                                 />
                                 {item.description ? <p>{item.description}</p> : ''}
                             </div>

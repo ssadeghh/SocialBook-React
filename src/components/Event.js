@@ -16,7 +16,7 @@ export default function Event(props) {
                 <p>
                     <FontAwesomeIcon icon={faMapMarkerAlt} /> Willson Tech Park
                 </p>
-                <a href="#">More Info</a>
+                <a href="">More Info</a>
             </div>
         </div>
     )

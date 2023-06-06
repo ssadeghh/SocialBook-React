@@ -10,17 +10,17 @@ export default function ActivityIcons() {
         <>
             <div class="activity-icons">
                 <div>
-                    <img src={require(`../images/like-blue.png`)} /> 120
+                    <img src={require(`../images/like-blue.png`)} alt="Like Icon"/> 120
                 </div>
                 <div>
-                    <img src={require(`../images/comments.png`)} /> 120
+                    <img src={require(`../images/comments.png`)} alt="Comment Icon"/> 120
                 </div>
                 <div>
-                    <img src={require(`../images/share.png`)} /> 43
+                    <img src={require(`../images/share.png`)} alt="Share Icon"/> 43
                 </div>
             </div>
             <div class="post-profile-icon">
-                <img src={require(`../images/${Profile}`)} />
+                <img src={require(`../images/${Profile}`)} alt="Profile Picture"/>
                 <FontAwesomeIcon icon={faCaretDown} />
             </div>
         </>

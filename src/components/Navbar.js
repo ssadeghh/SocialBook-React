@@ -19,6 +19,7 @@ export default function Navbar() {
                         <img
                             src={require(`../images/${data.Logo}`)}
                             className="logo"
+                            alt='logo'
                         />
                     </a>
                     <ul>
@@ -33,6 +34,7 @@ export default function Navbar() {
                     <div class="search-box">
                         <img
                             src={require(`../images/${data['Nav-data']['search-img']}`)}
+                            alt='search'
                         />
                         <input type="text" placeholder="Search" />
                     </div>
@@ -42,7 +44,7 @@ export default function Navbar() {
                         onClick={ShowSetting}
                     >
                         <img
-                            src={require(`../images/${data['Nav-data']['profile-pic']}`)}
+                            src={require(`../images/${data['Nav-data']['profile-pic']}`)} alt='profile'
                         />
                     </div>
                 </div>

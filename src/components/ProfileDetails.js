@@ -10,6 +10,7 @@ export default function ProfileDetails(props) {
                         <img
                             src={require(`../images/profile.png`)}
                             class="pd-img"
+                            alt='profile'
                         />
                         <div>
                             <h3>{name}</h3>
@@ -18,6 +19,7 @@ export default function ProfileDetails(props) {
                                 <img
                                     key={index}
                                     src={require(`../images/${image}`)}
+                                    alt='image'
                                 />
                             ))}
                         </div>
@@ -25,15 +27,15 @@ export default function ProfileDetails(props) {
                 </div>
                 <div class="pd-right">
                     <button type="button">
-                        <img src={require(`../images/add-friends.png`)} />
+                        <img src={require(`../images/add-friends.png`)} alt='add-friend' />
                         Friend
                     </button>
                     <button type="button">
-                        <img src={require(`../images/message.png`)} /> Message
+                        <img src={require(`../images/message.png`)} alt='message'/> Message
                     </button>
                     <br />
                     <a href="#">
-                        <img src={require(`../images/more.png`)} />
+                        <img src={require(`../images/more.png`)} alt='more'/>
                     </a>
                 </div>
             </div>

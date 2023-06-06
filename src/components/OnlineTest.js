@@ -6,7 +6,7 @@ export default function OnlineTest(props) {
         <div class="online-list">
             <div class="online">
                 <img
-                    src={require(`../images/${image}.png`)}
+                    src={require(`../images/${image}.png`)} alt='online-list-icon'
                 />
 
             </div>

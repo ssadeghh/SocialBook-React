@@ -11,7 +11,7 @@ export default function Profile() {
             <Navbar />
 
             <div class="profile-container">
-                <img src={require(`../images/cover.png`)} class="cover-img" />
+                <img src={require(`../images/cover.png`)} class="cover-img" alt='cover' />
 
                 <ProfileDetails
                     name={'Jack Nichelson'}
